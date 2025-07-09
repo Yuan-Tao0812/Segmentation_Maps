@@ -20,5 +20,5 @@ timm==0.6.12
 addict==2.4.0
 yapf==0.32.0
 prettytable==3.6.0
-safetensors==0.2.7
+safetensors
 basicsr==1.4.2
