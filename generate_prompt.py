@@ -21,8 +21,8 @@ def load_semantic_classes(csv_path):
     with open(csv_path, 'r') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            sid = int(row['id'])
-            name = row['name'].strip()
+            sid = int(row['Idx'])
+            name = row['Name'].strip()
             id_to_name[sid] = name
     return id_to_name
 
