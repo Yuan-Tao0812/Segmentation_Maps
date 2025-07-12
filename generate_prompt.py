@@ -8,12 +8,12 @@ from tqdm import tqdm
 # === 路径配置（请根据你的目录结构修改） ===
 YOLO_LABELS_DIR = "/content/drive/MyDrive/VisDrone2019-YOLO/VisDrone2019-YOLO-train/labels/"         # YOLO格式标签文件夹
 SEMANTIC_MASKS_DIR = "/content/drive/MyDrive/VisDrone2019-DET/VisDrone2019-DET-train/segmaps/"   # 语义分割单通道PNG文件夹
-CSV_PATH = "/content/drive/MyDrive/ControlNet-train/object150_info.csv"           # 类别信息CSV路径
-OUTPUT_JSON = "/content/drive/MyDrive/ControlNet-train/prompt.json"
+CSV_PATH = "/content/drive/MyDrive/ControlNet_train/object150_info.csv"           # 类别信息CSV路径
+OUTPUT_JSON = "/content/drive/MyDrive/ControlNet_train/prompt.json"
 
 # 这里假设你的图片文件都在同一个文件夹，source和target路径可以拼出来，自己根据实际路径修改
-SOURCE_IMG_DIR = "/content/drive/MyDrive/ControlNet-train/source/"
-TARGET_IMG_DIR = "/content/drive/MyDrive/ControlNet-train/target/"
+SOURCE_IMG_DIR = "/content/drive/MyDrive/ControlNet_train/source/"
+TARGET_IMG_DIR = "/content/drive/MyDrive/ControlNet_train/target/"
 
 # === 加载语义类别ID到名称的映射 ===
 def load_semantic_classes(csv_path):
